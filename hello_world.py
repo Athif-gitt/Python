@@ -201,6 +201,21 @@ from logging import raiseExceptions
 # for value in generator(10):
 #     print(value)
 
+# def generator(value):
+#     yield value
+# print(generator(10))
+# for value in generator(10):
+#     print(value)
+
+# with open("file1.txt", "r") as file1:
+#     content = file1.read()
+# print(content)
+
+with open("file1.txt", "r") as file1:
+    content =file1.read()
+print (content)
+
+
 
 
 
