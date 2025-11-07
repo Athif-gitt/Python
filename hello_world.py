@@ -211,9 +211,18 @@ from logging import raiseExceptions
 #     content = file1.read()
 # print(content)
 
-with open("file1.txt", "r") as file1:
-    content =file1.read()
-print (content)
+# with open("file1.txt", "r") as file1:
+#     content =file1.read()
+# print (content)
+
+def check_even(numbers):
+    if numbers % 2 == 0:
+        return True
+    return False
+numbers = [1, 2, 3, 4, 5, 6, 7,8 , 9, 10]
+
+even_number_iterator = filter(check_even, numbers)
+print(list(even_number_iterator))
 
 
 
