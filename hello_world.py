@@ -115,6 +115,87 @@ from logging import raiseExceptions
 # book1 = Book ("Rich Dad Poor Dad", "Lewis Hamilton", 499)
 # book1.display()
 
+# class Animal:
+#     # attribute and method of the parent class
+#     name = ""
+#
+#     def eat(self):
+#         print("I can eat")
+#
+#
+# # inherit from Animal
+# class Dog(Animal):
+#
+#     # new method in subclass
+#     def display(self):
+#         # access name attribute of superclass using self
+#         print("My name is ", self.name)
+#
+#
+# # create an object of the subclass
+# labrador = Dog()
+#
+# # access superclass attribute and method
+# labrador.name = "Rohu"
+# labrador.eat()
+#
+# # call subclass method
+# labrador.display()
+
+# class Animal:
+#     def eat(self):
+#         print("I can eat!")
+#
+# class Cat(Animal):
+#     def display(self, name):
+#         self.name = name
+#         print(f"My name is {self.name}")
+#
+# cat1 = Cat()
+# cat1.eat()
+# cat1.display("Kitty")
+
+# my_list = [4, 7, 0]
+# for element in my_list:
+#     print(element)
+
+# create a list of integers
+# my_list = [1, 2, 3, 4, 5]
+#
+# # create an iterator from the list
+# iterator = iter(my_list)
+# # print(list(iterator))
+#
+# # iterate through the elements of the iterator
+# for element in iterator:
+#
+#     # Print each element
+#     print(element)
+
+# fruits = ["Apple", "Banana", "Cherry"]
+# iterator = iter(fruits)
+#
+# print(next(iterator))
+# print(next(iterator))
+# print(next(iterator))
+
+# word = "python"
+# i = 0
+# while i <= len(word) - 1:
+#     print(word[i])
+#     i += 1
+
+# def generator(num):
+#     n = 0
+#     while n < num:
+#         yield n
+#         n += 1
+# for value in generator(5):
+#     print(value)
+
+
+
+
 
 
 
