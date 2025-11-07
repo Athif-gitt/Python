@@ -215,14 +215,27 @@ from logging import raiseExceptions
 #     content =file1.read()
 # print (content)
 
-def check_even(numbers):
-    if numbers % 2 == 0:
-        return True
-    return False
-numbers = [1, 2, 3, 4, 5, 6, 7,8 , 9, 10]
+# def check_even(numbers):
+#     if numbers % 2 == 0:
+#         return True
+#     return False
+# numbers = [1, 2, 3, 4, 5, 6, 7,8 , 9, 10]
+#
+# even_number_iterator = filter(check_even, numbers)
+# print(list(even_number_iterator))
 
-even_number_iterator = filter(check_even, numbers)
-print(list(even_number_iterator))
+numbers = [1, 2, 3, 4, 5]
+
+
+def squared(number):
+    return number * number
+
+
+squared_numbers = map(squared, numbers)
+squared_list = list(squared_numbers)
+print(squared_list)
+
+
 
 
 
