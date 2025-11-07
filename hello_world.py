@@ -193,6 +193,18 @@ from logging import raiseExceptions
 # for value in generator(5):
 #     print(value)
 
+# def generator(value):
+#     n = 0
+#     while n < value:
+#         yield value
+#         value += 1
+# for value in generator(10):
+#     print(value)
+
+
+
+
+
 
 
 
