@@ -224,16 +224,50 @@ from logging import raiseExceptions
 # even_number_iterator = filter(check_even, numbers)
 # print(list(even_number_iterator))
 
-numbers = [1, 2, 3, 4, 5]
+# numbers = [1, 2, 3, 4, 5]
+#
+#
+# def squared(number):
+#     return number * number
+#
+#
+# squared_numbers = map(squared, numbers)
+# squared_list = list(squared_numbers)
+# print(squared_list)
 
+# fruits = ["apple", "banana", "cherry"]
+#
+# quantities = [5, 10, 7]
+#
+# result = {fruit.upper(): item * 2 for fruit, item in zip(fruits, quantities)}
+#
+# print(
+#     result)
+#
+# print(list(zip(fruits, quantities)))
 
-def squared(number):
-    return number * number
+def simple_decorator(func):
+    def wrapper(*args, **kwargs):
+        print(">>> Starting function execution")
+        result = func(*args, **kwargs)  # Call the original function
+        print(">>> Function execution finished")
+        return result
+    return wrapper
 
+@simple_decorator
+def greet(name):
+    print(f"Hello, {name}!")
+    return f"Greeting for {name}"
 
-squared_numbers = map(squared, numbers)
-squared_list = list(squared_numbers)
-print(squared_list)
+@simple_decorator
+def calculate_sum(a, b):
+    print(f"Calculating sum of {a} and {b}")
+    return a + b
+
+# Calling the decorated functions
+print(greet("Alice"))
+print(calculate_sum(10, 20))
+
 
 
 
