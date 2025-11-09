@@ -268,17 +268,24 @@ from logging import raiseExceptions
 # print(greet("Alice"))
 # print(calculate_sum(10, 20))
 
-students = {
-    "student1": {"name": "Athif", "marks": 90, "course": "Python"},
-    "student2": {"name": "Arun", "marks": 85, "course": "Java"},
-    "student3": {"name": "Sara", "marks": 95, "course": "C++"}
-}
-for key, value in students.items():
-    print(f"{value['name']} has scored {value['marks']} marks!")
-students["student4"] = {"name": "Ravi", "marks": 80, "Course": "JavaScript"}
-students["student4"]["marks"] = 88
-del(students["student3"])
-print(students)
+# students = {
+#     "student1": {"name": "Athif", "marks": 90, "course": "Python"},
+#     "student2": {"name": "Arun", "marks": 85, "course": "Java"},
+#     "student3": {"name": "Sara", "marks": 95, "course": "C++"}
+# }
+# for key, value in students.items():
+#     print(f"{value['name']} has scored {value['marks']} marks!")
+# students["student4"] = {"name": "Ravi", "marks": 80, "Course": "JavaScript"}
+# students["student4"]["marks"] = 88
+# del(students["student3"])
+# print(students)
+
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x < 0:
+            return(False)
+        return x
+Solution(121)
 
 
 
