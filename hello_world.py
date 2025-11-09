@@ -246,27 +246,39 @@ from logging import raiseExceptions
 #
 # print(list(zip(fruits, quantities)))
 
-def simple_decorator(func):
-    def wrapper(*args, **kwargs):
-        print(">>> Starting function execution")
-        result = func(*args, **kwargs)  # Call the original function
-        print(">>> Function execution finished")
-        return result
-    return wrapper
+# def simple_decorator(func):
+#     def wrapper(*args, **kwargs):
+#         print(">>> Starting function execution")
+#         result = func(*args, **kwargs)  # Call the original function
+#         print(">>> Function execution finished")
+#         return result
+#     return wrapper
+#
+# @simple_decorator
+# def greet(name):
+#     print(f"Hello, {name}!")
+#     return f"Greeting for {name}"
+#
+# @simple_decorator
+# def calculate_sum(a, b):
+#     print(f"Calculating sum of {a} and {b}")
+#     return a + b
+#
+# # Calling the decorated functions
+# print(greet("Alice"))
+# print(calculate_sum(10, 20))
 
-@simple_decorator
-def greet(name):
-    print(f"Hello, {name}!")
-    return f"Greeting for {name}"
-
-@simple_decorator
-def calculate_sum(a, b):
-    print(f"Calculating sum of {a} and {b}")
-    return a + b
-
-# Calling the decorated functions
-print(greet("Alice"))
-print(calculate_sum(10, 20))
+students = {
+    "student1": {"name": "Athif", "marks": 90, "course": "Python"},
+    "student2": {"name": "Arun", "marks": 85, "course": "Java"},
+    "student3": {"name": "Sara", "marks": 95, "course": "C++"}
+}
+for key, value in students.items():
+    print(f"{value['name']} has scored {value['marks']} marks!")
+students["student4"] = {"name": "Ravi", "marks": 80, "Course": "JavaScript"}
+students["student4"]["marks"] = 88
+del(students["student3"])
+print(students)
 
 
 
