@@ -280,12 +280,17 @@ from logging import raiseExceptions
 # del(students["student3"])
 # print(students)
 
-class Solution:
-    def isPalindrome(self, x: int) -> bool:
-        if x < 0:
-            return(False)
-        return x
-Solution(121)
+# class Solution:
+#     def isPalindrome(self, x: int) -> bool:
+#         if x < 0:
+#             return(False)
+#         return x
+# Solution(121)
+
+# x = 257
+# print(id(x))
+# y = 257
+# print(id(y))
 
 
 
