@@ -292,6 +292,28 @@ from logging import raiseExceptions
 # y = 257
 # print(id(y))
 
+# Problem: Reverse "hello" without slicing.
+# word = "hello"
+# word_reverse = ""
+# for letter in word:
+#     word_reverse = letter + word_reverse
+# print(word_reverse)
+
+# Problem: Count vowels in "programming".
+word = "programming"
+vowels = "aeiou"
+vowels_sorted = ""
+for letter in word:
+    if letter in vowels:
+        vowels_sorted += letter
+print(len(vowels_sorted))
+
+
+
+
+
+
+
 
 
 
