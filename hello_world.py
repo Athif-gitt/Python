@@ -300,13 +300,24 @@ from logging import raiseExceptions
 # print(word_reverse)
 
 # Problem: Count vowels in "programming".
-word = "programming"
-vowels = "aeiou"
-vowels_sorted = ""
-for letter in word:
-    if letter in vowels:
-        vowels_sorted += letter
-print(len(vowels_sorted))
+# word = "programming"
+# vowels = "aeiou"
+# vowels_sorted = ""
+# for letter in word:
+#     if letter in vowels:
+#         vowels_sorted += letter
+# print(len(vowels_sorted))
+
+def square_decorator(func):
+    def wrapper(numb):
+        print(f"Square of {numb} is:")
+        func(numb)
+    return wrapper
+
+@square_decorator
+def square(numb):
+    print(numb ** 2)
+square(3)
 
 
 
