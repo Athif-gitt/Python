@@ -319,19 +319,80 @@ from logging import raiseExceptions
 #     print(numb ** 2)
 # square(3)
 
-class Dog:
-    species = "Pug"
-    def __init__(self, name, age): # constructor function, self = instance attribute
+# class Dog:
+#     species = "Pug"
+#     def __init__(self, name, age): # constructor function, self = instance attribute
+#         self.name = name
+#         self.age = age
+#     def bark(self):
+#         print(self.name + " " +  "barks") # instance method
+#
+# dog1 = Dog("Tobby", 3)
+# dog2 = Dog("Buddy", 1)
+# print(dog1.name)
+# dog2.bark()
+# print(dog2.species)
+
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.marks = marks
+#     def get_marks(self):
+#         if self.marks >= 80:
+#             print("A+")
+#         if self.marks <= 60:
+#             print("B+")
+#         if self.marks >= 40:
+#             print("C+")
+# class School(Student):
+#     pass
+# student1 = Student("Athif", 100)
+# student2 = School("Athif", 69)
+# print(student2.name)
+
+# class Person:
+#   def __init__(self, fname, lname):
+#     self.firstname = fname
+#     self.lastname = lname
+# class Student(Person):
+#     def __init__(self, fname, lname, year):
+#         super().__init__(fname, lname)
+#         self.graduationyear = year
+#     def print_details(self):
+#         print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
+# student1 = Student("Athif", "Faisal", 2025)
+# print(student1.print_details())
+
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.marks = marks
+#     def is_pass(self):
+#         return self.marks >= 40
+# student1 = Student("Athif", 100)
+# student2 = Student("Faisal", 39)
+# print(student1.is_pass())
+# print(student2.is_pass())
+
+class Person:
+    def __init__(self, name, age):
         self.name = name
         self.age = age
-    def bark(self):
-        print(self.name + " " +  "barks") # instance method
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+    def student_ids(self):
+        print(f"{self.name}, {self.age}, {self.student_id}")
+student1 = Student("Athif", 21, 2123)
+student1.student_ids()
 
-dog1 = Dog("Tobby", 3)
-dog2 = Dog("Buddy", 1)
-print(dog1.name)
-dog2.bark()
-print(dog2.species)
+
+
+
+
+
+
 
 
 
