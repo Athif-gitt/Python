@@ -308,17 +308,30 @@ from logging import raiseExceptions
 #         vowels_sorted += letter
 # print(len(vowels_sorted))
 
-def square_decorator(func):
-    def wrapper(numb):
-        print(f"Square of {numb} is:")
-        func(numb)
-    return wrapper
+# def square_decorator(func):
+#     def wrapper(numb):
+#         print(f"Square of {numb} is:")
+#         func(numb)
+#     return wrapper
+#
+# @square_decorator
+# def square(numb):
+#     print(numb ** 2)
+# square(3)
 
-@square_decorator
-def square(numb):
-    print(numb ** 2)
-square(3)
+class Dog:
+    species = "Pug"
+    def __init__(self, name, age): # constructor function, self = instance attribute
+        self.name = name
+        self.age = age
+    def bark(self):
+        print(self.name + " " +  "barks") # instance method
 
+dog1 = Dog("Tobby", 3)
+dog2 = Dog("Buddy", 1)
+print(dog1.name)
+dog2.bark()
+print(dog2.species)
 
 
 
