@@ -374,18 +374,28 @@ from logging import raiseExceptions
 # print(student1.is_pass())
 # print(student2.is_pass())
 
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-class Student(Person):
-    def __init__(self, name, age, student_id):
-        super().__init__(name, age)
-        self.student_id = student_id
-    def student_ids(self):
-        print(f"{self.name}, {self.age}, {self.student_id}")
-student1 = Student("Athif", 21, 2123)
-student1.student_ids()
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+# class Student(Person):
+#     def __init__(self, name, age, student_id):
+#         super().__init__(name, age)
+#         self.student_id = student_id
+#     def student_ids(self):
+#         print(f"{self.name}, {self.age}, {self.student_id}")
+# student1 = Student("Athif", 21, 2123)
+# student1.student_ids()
+
+class Dog:
+    def speak(self):
+        return("bow")
+class Cat:
+    def speak(self):
+        return("meow")
+animals = [Dog(), Cat()]
+for animal in animals:
+    print(animal.speak())
 
 
 
