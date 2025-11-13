@@ -387,15 +387,43 @@ from logging import raiseExceptions
 # student1 = Student("Athif", 21, 2123)
 # student1.student_ids()
 
-class Dog:
-    def speak(self):
-        return("bow")
-class Cat:
-    def speak(self):
-        return("meow")
-animals = [Dog(), Cat()]
-for animal in animals:
-    print(animal.speak())
+
+#polymorphism
+# class Dog:
+#     def speak(self):
+#         return("bow")
+# class Cat:
+#     def speak(self):
+#         return("meow")
+# animals = [Dog(), Cat()]
+# for animal in animals:
+#     print(animal.speak())
+
+# def check_prime(numb):
+#     c = 0
+#     for i in range(1, numb + 1, 1):
+#         if numb % i == 0:
+#             c += 1
+#     if c == 2:
+#         print("prime")
+#     else:
+#         print("non-prime")
+# check_prime(7)
+
+def check_prime(numb):
+    c = 0
+    for i in range(1, numb + 1, 1):
+        if numb % i == 0:
+            c += i
+    print(0)
+check_prime(5)
+
+
+
+
+
+
+
 
 
 
