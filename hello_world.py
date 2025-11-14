@@ -418,18 +418,62 @@ from logging import raiseExceptions
 #     print(0)
 # check_prime(5)
 
-class BankAccount():
-    def __init__(self, account_holder, balance = 0):
-        self.account_holder = account_holder
-        self.balance = balance
-    def deposit(self, amount):
-        self.amount = amount
-        self.balance += amount
-    def details(self):
-        print(f"{self.account_holder} balance = {self.balance}")
-person1 = BankAccount("Athif")
-person1.deposit(500)
-person1.details()
+# class BankAccount():
+#     def __init__(self, account_holder, balance = 0):
+#         self.account_holder = account_holder
+#         self.balance = balance
+#     def deposit(self, amount):
+#         self.amount = amount
+#         self.balance += amount
+#     def details(self):
+#         print(f"{self.account_holder} balance = {self.balance}")
+# person1 = BankAccount("Athif")
+# person1.deposit(500)
+# person1.details()
+
+# class Circle:
+#     def __init__(self, radius):
+#         self.radius = radius
+#     def area(self):
+#         print(f"{3.14 * self.radius ** 2}")
+# class Square:
+#     def __init__(self, side):
+#         self.side = side
+#     def area(self):
+#         print(self.side * self.side)
+# shapes = [Circle(2), Square(3)]
+# for shape in shapes:
+#     shape.area()
+
+class Dog:
+    def __init__(self):
+        pass
+    def sound(self):
+        print("Bow Bow!")
+class Cat:
+    def __init__(self):
+        pass
+    def sound(self):
+        print("Meow Meow!")
+dog = Dog()
+cat = Cat()
+def call_animal_sound(animal):
+    if animal == "dog":
+        return dog.sound()
+    else:
+        return cat.sound()
+call_animal_sound("dog")
+
+
+
+
+
+
+
+
+
+
+
 
 
 
