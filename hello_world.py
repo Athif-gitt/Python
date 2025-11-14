@@ -410,13 +410,26 @@ from logging import raiseExceptions
 #         print("non-prime")
 # check_prime(7)
 
-def check_prime(numb):
-    c = 0
-    for i in range(1, numb + 1, 1):
-        if numb % i == 0:
-            c += i
-    print(0)
-check_prime(5)
+# def check_prime(numb):
+#     c = 0
+#     for i in range(1, numb + 1, 1):
+#         if numb % i == 0:
+#             c += i
+#     print(0)
+# check_prime(5)
+
+class BankAccount():
+    def __init__(self, account_holder, balance = 0):
+        self.account_holder = account_holder
+        self.balance = balance
+    def deposit(self, amount):
+        self.amount = amount
+        self.balance += amount
+    def details(self):
+        print(f"{self.account_holder} balance = {self.balance}")
+person1 = BankAccount("Athif")
+person1.deposit(500)
+person1.details()
 
 
 
