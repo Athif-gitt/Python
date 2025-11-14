@@ -445,24 +445,38 @@ from logging import raiseExceptions
 # for shape in shapes:
 #     shape.area()
 
-class Dog:
-    def __init__(self):
+# class Dog:
+#     def __init__(self):
+#         pass
+#     def sound(self):
+#         print("Bow Bow!")
+# class Cat:
+#     def __init__(self):
+#         pass
+#     def sound(self):
+#         print("Meow Meow!")
+# dog = Dog()
+# cat = Cat()
+# def call_animal_sound(animal):
+#     if animal == "dog":
+#         return dog.sound()
+#     else:
+#         return cat.sound()
+# call_animal_sound("dog")
+
+from abc import ABC, abstractmethod
+
+class Shape:
+    @abstractmethod
+    def draw(self):
         pass
-    def sound(self):
-        print("Bow Bow!")
-class Cat:
-    def __init__(self):
-        pass
-    def sound(self):
-        print("Meow Meow!")
-dog = Dog()
-cat = Cat()
-def call_animal_sound(animal):
-    if animal == "dog":
-        return dog.sound()
-    else:
-        return cat.sound()
-call_animal_sound("dog")
+class Circle(Shape):
+    def draw(self):
+        print("drawing a circle")
+class Square(Shape):
+    def draw(self):
+        print("drawing a square")
+Circle().draw()
 
 
 
