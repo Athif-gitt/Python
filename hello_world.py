@@ -464,19 +464,24 @@ from logging import raiseExceptions
 #         return cat.sound()
 # call_animal_sound("dog")
 
-from abc import ABC, abstractmethod
+# from abc import ABC, abstractmethod
+#
+# class Shape:
+#     @abstractmethod
+#     def draw(self):
+#         pass
+# class Circle(Shape):
+#     def draw(self):
+#         print("drawing a circle")
+# class Square(Shape):
+#     def draw(self):
+#         print("drawing a square")
+# Circle().draw()
 
-class Shape:
-    @abstractmethod
-    def draw(self):
-        pass
-class Circle(Shape):
-    def draw(self):
-        print("drawing a circle")
-class Square(Shape):
-    def draw(self):
-        print("drawing a square")
-Circle().draw()
+a = [1, 2, 3, 45, 5]
+b = list(map(lambda x: x ** 2, a))
+print(b)
+
 
 
 
