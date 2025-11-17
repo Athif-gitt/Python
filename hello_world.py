@@ -478,9 +478,16 @@ from logging import raiseExceptions
 #         print("drawing a square")
 # Circle().draw()
 
-a = [1, 2, 3, 45, 5]
-b = list(map(lambda x: x ** 2, a))
-print(b)
+# a = [1, 2, 3, 45, 5]
+# b = list(map(lambda x: x ** 2, a))
+# print(b)
+
+a = "python"
+sub = "tho"
+if sub in a:
+    print("Found")
+else:
+    ("Not Found!")
 
 
 
